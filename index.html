@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <!--ENCABEZADO DE LA PAGINA-->
+    <header>
+        <a href="#" rel = "">
+            <img src="./imagenes/logo.png" alt="Logo de Altura" class="logo">
+        </a>
+    </header>
+
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <section class="espacio-uno">
+
+            <textarea id=txtArea class="ingresar-texto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="encritador-notificar">
+                <img src="./imagenes/aviso.svg" alt="Icono de Aviso" class="icono-aviso">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones-encriptadores">
+                <button type="submit" class="boton-encriptar">Encriptar!</button>
+                <button type="submit" class="boton-desencriptar">Desencriptar!</button>
+            </div> 
+
+        </section>
+
+        <section class="espacio-dos">
+
+            <div class="componentes-espacio-dos">
+                <img id=muñeco src="./imagenes/muneco.png" alt="Imagen del muñeco" class="img-muñeco">
+                <p class="texto1">Ningún mensaje fue encontrado</p>
+                <p class="texto2">Ingrese el texto que deseas encriptar o Desencriptar</p>
+            </div>
+            <textarea id=txtArea2 type="mensaje" class="mostrar-texto" readonly></textarea>
+            <button type="submit" class="boton-copiar">Copiar</button>
+
+        </section>
+    </main>
+    <script src="./javascript/javascript.js"></script>
+</body>
+</html>
